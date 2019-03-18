@@ -1,0 +1,230 @@
+[
+    {
+        "name": "replace_all_nulls_csv",
+        "details": "all csv columns values are nulls and should be replaced with generic strings",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/validate/allow_all_nulls_csv.json",
+        "source_files": ["tests/test_files/csv/empty.csv"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 0,
+            "first_name": "FIRST",
+            "last_name": "LAST",
+            "email": "EMAIL",
+            "gender": "GENDER",
+            "ip_address": "IP"
+        },
+        "last": {
+            "id": 0,
+            "first_name": "FIRST",
+            "last_name": "LAST",
+            "email": "EMAIL",
+            "gender": "GENDER",
+            "ip_address": "IP"
+        }
+    },
+    {
+        "name": "replace_all_nulls_excel",
+        "details": "all excel column values are null (except ID) and should be replaced",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/validate/allow_all_nulls_excel.json",
+        "source_files": ["tests/test_files/excel/empty.xls"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "FIRST",
+            "last_name": "LAST",
+            "email": "EMAIL",
+            "gender": "GENDER",
+            "ip_address": "IP"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "FIRST",
+            "last_name": "LAST",
+            "email": "EMAIL",
+            "gender": "GENDER",
+            "ip_address": "IP"
+        }
+    },
+    {
+        "name": "replace_all_nulls_json",
+        "details": "all json columns values are empty string (or keys don't exist) and should be replaced",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/validate/allow_all_nulls_json.json",
+        "source_files": ["tests/test_files/json/empty.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 0,
+            "first_name": "FIRST",
+            "last_name": "LAST",
+            "email": "EMAIL",
+            "gender": "GENDER",
+            "ip_address": "IP"
+        },
+        "last": {
+            "id": 0,
+            "first_name": "FIRST",
+            "last_name": "LAST",
+            "email": "EMAIL",
+            "gender": "GENDER",
+            "ip_address": "IP"
+        }
+    },
+    {
+        "name": "error_all_null_excel",
+        "details": "all rows contains a null value that is required",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/validate/error_on_null_excel.json",
+        "source_files": ["tests/test_files/excel/empty.xls"],
+        "errors": 0,
+        "warnings": 1,
+        "number_items": 0,
+        "first": {
+        },
+        "last": {
+        }
+    },
+    {
+        "name": "error_all_null_json",
+        "details": "each row contains a null value that is required",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/validate/error_on_null_json.json",
+        "source_files": ["tests/test_files/json/empty.json"],
+        "errors": 0,
+        "warnings": 1,
+        "number_items": 0,
+        "first": {
+        },
+        "last": {
+        }
+    },
+    {
+        "name": "error_all_null_csv",
+        "details": "each row contains a null value that is required",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/validate/error_on_null_csv.json",
+        "source_files": ["tests/test_files/csv/empty.csv"],
+        "errors": 0,
+        "warnings": 1,
+        "number_items": 0,
+        "first": {
+        },
+        "last": {
+        }
+    },
+    {
+        "name": "error_one_null_each_field",
+        "details": "each of the first 6 rows is missing a required field and should be excluded",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/validate/error_on_null_json.json",
+        "source_files": ["tests/test_files/json/one_null.json"],
+        "errors": 0,
+        "warnings": 6,
+        "number_items": 4,
+        "first": {
+            "last_name": "Brewis",
+            "email": "bbrewis6@myspace.com",
+            "id": 7,
+            "gender": "Female",
+            "ip_address": "55.13.144.83",
+            "first_name": "Bertina"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "mixed",
+        "details": "rows contain a combination of required and non-required null fields",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/validate/mixed_nulls.json",
+        "source_files": ["tests/test_files/json/mixed_nulls.json"],
+        "errors": 0,
+        "warnings": 2,
+        "number_items": 4,
+        "first": {
+            "last_name": "O'Shee",
+            "id": 4,
+            "gender": "Male",
+            "ip_address": "227.126.127.240",
+            "first_name": "Fernando",
+            "email": "EMAIL"
+        },
+        "last": {
+            "last_name": "Brewis",
+            "email": "bbrewis6@myspace.com",
+            "id": 7,
+            "gender": "Female",
+            "ip_address": "55.13.144.83",
+            "first_name": "FIRST"
+        }
+    },
+    {
+        "name": "type_casting_valid",
+        "details": "attempt to make all valid data type conversions",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/validate/type_casting_valid.json",
+        "source_files": ["tests/test_files/json/type_casting_test.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 2,
+        "first": {
+            "int_as_int": 1,
+            "int_as_string": 1,
+            "int_as_bool": 1,
+            "bool_as_bool": true,
+            "bool_as_string": true,
+            "bool_as_int": true,
+            "string_as_int": "1",
+            "string_as_string": "1",
+            "string_as_bool": "True"
+        },
+        "last": {
+            "int_as_int": 2,
+            "int_as_string": 2,
+            "int_as_bool": 0,
+            "bool_as_bool": false,
+            "bool_as_string": false,
+            "bool_as_int": false,
+            "string_as_int": "2",
+            "string_as_string": "2",
+            "string_as_bool": "False"
+        }
+    },
+    {
+        "name": "truthy strings",
+        "details": "make sure default and custom truthy strings work for boolean casts",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/validate/type_casting_truthy_strings.json",
+        "source_files": ["tests/test_files/json/type_casting_truthy_strings.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 2,
+        "first": {
+            "default_1": true,
+            "default_2": true,
+            "default_3": true,
+            "custom_1": true,
+            "custom_2": true
+        },
+        "last": {
+            "default_1": false,
+            "default_2": false,
+            "default_3": false,
+            "custom_1": false,
+            "custom_2": false
+        }
+    }
+]

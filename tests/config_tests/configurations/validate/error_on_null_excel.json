@@ -1,0 +1,100 @@
+{
+    "version": "VERSION_1",
+    "sourceFiles": [
+        {
+            "hasHeader": true,
+            "type": "EXCEL"
+        }
+    ],
+    "outputFile": {
+        "compression": "",
+        "delimiter": ",",
+
+        "lineDelimitedJSON": false,
+        "name": "test_output.json",
+        "hasHeader": true,
+        "type": "JSON"
+    },
+    "sourceFields": [
+        {
+            "name": "id",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "first_name",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "last_name",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "email",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "gender",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "ip_address",
+            "fileIndex": 0,
+            "used": true
+        }
+    ],
+    "outputFields": [
+        {
+            "allowNull": false,
+            "name": "id",
+            "replaceNullWith": 0,
+            "sourceFields": [0],
+            "transformations": [],
+            "type": "INT"
+        },
+        {
+            "allowNull": false,
+            "name": "first_name",
+            "replaceNullWith": "FIRST",
+            "sourceFields": [1],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": false,
+            "name": "last_name",
+            "replaceNullWith": "LAST",
+            "sourceFields": [2],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": false,
+            "name": "email",
+            "replaceNullWith": "EMAIL",
+            "sourceFields": [3],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": false,
+            "name": "gender",
+            "replaceNullWith": "GENDER",
+            "sourceFields": [4],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": false,
+            "name": "ip_address",
+            "replaceNullWith": "IP",
+            "sourceFields": [5],
+            "transformations": [],
+            "type": "STRING"
+        }
+    ]
+}

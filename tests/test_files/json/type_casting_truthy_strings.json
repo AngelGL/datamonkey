@@ -1,0 +1,16 @@
+[
+    {
+        "default_1": "True",
+        "default_2": "Yes",
+        "default_3": "1",
+        "custom_1": "TEST",
+        "custom_2": "False"
+    },
+    {
+        "default_1": "False",
+        "default_2": "No",
+        "default_3": "0",
+        "custom_1": "BLAH",
+        "custom_2": "True"
+    }
+]

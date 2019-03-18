@@ -1,0 +1,139 @@
+{
+    "version": "VERSION_1",
+    "sourceFiles": [
+        {
+            "hasHeader": true,
+            "type": "JSON"
+        }
+    ],
+    "outputFile": {
+        "compression": "",
+        "delimiter": ",",
+
+        "lineDelimitedJSON": false,
+        "name": "test_output.json",
+        "hasHeader": true,
+        "type": "JSON"
+    },
+    "sourceFields": [
+        {
+            "name": "int_as_int",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "int_as_string",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "int_as_bool",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "bool_as_bool",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "bool_as_string",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "bool_as_int",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "string_as_int",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "string_as_string",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "string_as_bool",
+            "fileIndex": 0,
+            "used": true
+        }
+    ],
+    "outputFields": [
+        {
+            "allowNull": false,
+            "name": "int_as_int",
+            "replaceNullWith": 0,
+            "sourceFields": [0],
+            "transformations": [],
+            "type": "INT"
+        },
+        {
+            "allowNull": false,
+            "name": "int_as_string",
+            "replaceNullWith": "",
+            "sourceFields": [1],
+            "transformations": [],
+            "type": "INT"
+        },
+        {
+            "allowNull": false,
+            "name": "int_as_bool",
+            "replaceNullWith": "",
+            "sourceFields": [2],
+            "transformations": [],
+            "type": "INT"
+        },
+        {
+            "allowNull": false,
+            "name": "bool_as_bool",
+            "replaceNullWith": "",
+            "sourceFields": [3],
+            "transformations": [],
+            "type": "BOOLEAN"
+        },
+        {
+            "allowNull": false,
+            "name": "bool_as_string",
+            "replaceNullWith": "",
+            "sourceFields": [4],
+            "transformations": [],
+            "type": "BOOLEAN"
+        },
+        {
+            "allowNull": false,
+            "name": "bool_as_int",
+            "replaceNullWith": "",
+            "sourceFields": [5],
+            "transformations": [],
+            "type": "BOOLEAN"
+        },
+        {
+            "allowNull": false,
+            "name": "string_as_int",
+            "replaceNullWith": "",
+            "sourceFields": [6],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": false,
+            "name": "string_as_string",
+            "replaceNullWith": "",
+            "sourceFields": [7],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": false,
+            "name": "string_as_bool",
+            "replaceNullWith": "",
+            "sourceFields": [8],
+            "transformations": [],
+            "type": "STRING"
+        }
+    ]
+}

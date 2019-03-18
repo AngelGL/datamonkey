@@ -1,0 +1,90 @@
+{
+    "version": "VERSION_1",
+    "sourceFiles": [
+        {
+            "hasHeader": true,
+            "type": "JSON"
+        }
+    ],
+    "outputFile": {
+        "compression": "",
+        "delimiter": ",",
+
+        "lineDelimitedJSON": false,
+        "name": "test_output.json",
+        "hasHeader": true,
+        "type": "JSON"
+    },
+    "sourceFields": [
+        {
+            "name": "default_1",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "default_2",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "default_3",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "custom_1",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "custom_2",
+            "fileIndex": 0,
+            "used": true
+        }
+    ],
+    "outputFields": [
+        {
+            "allowNull": false,
+            "name": "default_1",
+            "replaceNullWith": 0,
+            "sourceFields": [0],
+            "transformations": [],
+            "type": "BOOLEAN"
+        },
+        {
+            "allowNull": false,
+            "name": "default_2",
+            "replaceNullWith": "",
+            "sourceFields": [1],
+            "transformations": [],
+            "type": "BOOLEAN"
+        },
+        {
+            "allowNull": false,
+            "name": "default_3",
+            "replaceNullWith": "",
+            "sourceFields": [2],
+            "transformations": [],
+            "type": "BOOLEAN"
+        },
+        {
+            "allowNull": false,
+            "name": "custom_1",
+            "replaceNullWith": "",
+            "sourceFields": [3],
+            "transformations": [],
+            "truthyStrings": ["TEST"],
+            "type": "BOOLEAN"
+        },
+        {
+            "allowNull": false,
+            "name": "custom_2",
+            "replaceNullWith": "",
+            "sourceFields": [4],
+            "transformations": [],
+            "truthyStrings": ["False"],
+            "type": "BOOLEAN"
+        }
+    ]
+}
+

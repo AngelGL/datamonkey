@@ -1,0 +1,106 @@
+{
+    "version": "VERSION_1",
+    "sourceFiles": [
+        {
+            "hasHeader": true,
+            "type": "JSON"
+        }
+    ],
+    "outputFile": {
+        "compression": "",
+        "delimiter": ",",
+
+        "lineDelimitedJSON": false,
+        "name": "test_output.txt",
+        "hasHeader": true,
+        "type": "FWF"
+    },
+    "sourceFields": [
+        {
+            "name": "id",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "first_name",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "last_name",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "email",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "gender",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "ip_address",
+            "fileIndex": 0,
+            "used": true
+        }
+    ],
+    "outputFields": [
+        {
+            "allowNull": true,
+            "name": "id",
+            "replaceNullWith": "TEST",
+            "sourceFields": [0],
+            "transformations": [],
+            "type": "INT",
+            "colSpecs": [0, 5]
+        },
+        {
+            "allowNull": true,
+            "name": "first_name",
+            "replaceNullWith": "TEST",
+            "sourceFields": [1],
+            "transformations": [],
+            "type": "STRING",
+            "colSpecs": [6, 20]
+        },
+        {
+            "allowNull": true,
+            "name": "last_name",
+            "replaceNullWith": "TEST",
+            "sourceFields": [2],
+            "transformations": [],
+            "type": "STRING",
+            "colSpecs": [21, 40]
+        },
+        {
+            "allowNull": true,
+            "name": "email",
+            "replaceNullWith": "TEST",
+            "sourceFields": [3],
+            "transformations": [],
+            "type": "STRING",
+            "colSpecs": [41, 70]
+        },
+        {
+            "allowNull": true,
+            "name": "gender",
+            "replaceNullWith": "TEST",
+            "sourceFields": [4],
+            "transformations": [],
+            "type": "STRING",
+            "colSpecs": [71, 80]
+        },
+        {
+            "allowNull": true,
+            "name": "ip_address",
+            "replaceNullWith": "TEST",
+            "sourceFields": [5],
+            "transformations": [],
+            "type": "STRING",
+            "colSpecs": [81, 100]
+        }
+    ]
+}

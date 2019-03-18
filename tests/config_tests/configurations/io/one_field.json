@@ -1,0 +1,60 @@
+{
+    "version": "VERSION_1",
+    "sourceFiles": [
+        {
+            "hasHeader": true,
+            "type": "JSON"
+        }
+    ],
+    "outputFile": {
+        "compression": "",
+        "delimiter": ",",
+
+        "lineDelimitedJSON": false,
+        "name": "test_output.json",
+        "hasHeader": true,
+        "type": "JSON"
+    },
+    "sourceFields": [
+        {
+            "name": "id",
+            "fileIndex": 0,
+            "used": false
+        },
+        {
+            "name": "first_name",
+            "fileIndex": 0,
+            "used": false
+        },
+        {
+            "name": "last_name",
+            "fileIndex": 0,
+            "used": false
+        },
+        {
+            "name": "email",
+            "fileIndex": 0,
+            "used": false
+        },
+        {
+            "name": "gender",
+            "fileIndex": 0,
+            "used": false
+        },
+        {
+            "name": "ip_address",
+            "fileIndex": 0,
+            "used": false
+        }
+    ],
+    "outputFields": [
+        {
+            "allowNull": true,
+            "name": "ip_address",
+            "replaceNullWith": "TEST",
+            "sourceFields": [5],
+            "transformations": [],
+            "type": "STRING"
+        }
+    ]
+}

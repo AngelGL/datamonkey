@@ -1,0 +1,625 @@
+[
+    {
+        "name": "filter_by_range",
+        "details": "Filter ID field by defined range",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/filters/filter_by_range.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 5,
+        "first": {
+            "last_name": "McGillacoell",
+            "email": "fmcgillacoell2@fda.gov",
+            "id": 3,
+            "gender": "Male",
+            "ip_address": "57.97.190.251",
+            "first_name": "Fidel"
+        },
+        "last": {
+            "last_name": "Brewis",
+            "email": "bbrewis6@myspace.com",
+            "id": 7,
+            "gender": "Female",
+            "ip_address": "55.13.144.83",
+            "first_name": "Bertina"
+        }
+    },
+    {
+        "name": "filter_by_min",
+        "details": "Filter ID field by defined minimum",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/filters/filter_by_min.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 8,
+        "first": {
+            "last_name": "McGillacoell",
+            "email": "fmcgillacoell2@fda.gov",
+            "id": 3,
+            "gender": "Male",
+            "ip_address": "57.97.190.251",
+            "first_name": "Fidel"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "filter_by_max",
+        "details": "Filter ID field by defined maximum",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/filters/filter_by_max.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 3,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "McGillacoell",
+            "email": "fmcgillacoell2@fda.gov",
+            "id": 3,
+            "gender": "Male",
+            "ip_address": "57.97.190.251",
+            "first_name": "Fidel"
+        }
+    },
+    {
+        "name": "filter_by_list",
+        "details": "Filter Gender field by defined list of values",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/filters/filter_by_list.json",
+        "source_files": ["tests/test_files/json/filter_tests.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 8,
+        "first": {
+            "last_name": "Vittet",
+            "id": 2,
+            "gender": "Male",
+            "ip_address": "21.33.166.211",
+            "first_name": "Jeff"
+        },
+        "last": {
+            "last_name": "Cudworth",
+            "email": "acudworth8@wordpress.com",
+            "id": 9,
+            "gender": "Male",
+            "ip_address": "31.105.105.204",
+            "first_name": "Allie"
+        }
+    },
+    {
+        "name": "filter_by_regex",
+        "details": "Filter IP field by against an IPv4 regex",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/filters/filter_by_regex.json",
+        "source_files": ["tests/test_files/json/filter_tests.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 8,
+        "first": {
+            "last_name": "Vittet",
+            "id": 2,
+            "gender": "Male",
+            "ip_address": "21.33.166.211",
+            "first_name": "Jeff"
+        },
+        "last": {
+            "last_name": "Cudworth",
+            "email": "acudworth8@wordpress.com",
+            "id": 9,
+            "gender": "Male",
+            "ip_address": "31.105.105.204",
+            "first_name": "Allie"
+        }
+    },
+    {
+        "name": "filter_by_length",
+        "details": "Filter first name field for length GT 4 chars",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/filters/filter_by_length.json",
+        "source_files": ["tests/test_files/json/filter_tests.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 8,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "TEST",
+            "ip_address": "abc.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "TEST",
+            "ip_address": "87.21.157.231adf",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "filter_by_substring_exclude",
+        "details": "Filter gender field for substring",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/filters/filter_by_substring_exclude.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 6,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Cudworth",
+            "email": "acudworth8@wordpress.com",
+            "id": 9,
+            "gender": "Male",
+            "ip_address": "31.105.105.204",
+            "first_name": "Allie"
+        }
+    },
+    {
+        "name": "filter_by_substring_require",
+        "details": "Filter gender field for substring",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/filters/filter_by_substring_require.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 4,
+        "first": {
+            "last_name": "Worrill",
+            "id": 6,
+            "gender": "Female",
+            "ip_address": "3.73.23.22",
+            "first_name": "Winnah"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "Dulcea"
+        }
+    },
+
+    {
+        "name": "validate_by_range",
+        "details": "Filter ID field by defined range",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/validators/validate_by_range.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 5,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "validate_by_min",
+        "details": "Filter ID field by defined minimum",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/validators/validate_by_min.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 2,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "validate_by_max",
+        "details": "Filter ID field by defined maximum",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/validators/validate_by_max.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 7,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "validate_by_list",
+        "details": "Filter Gender field by defined list of values",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/validators/validate_by_list.json",
+        "source_files": ["tests/test_files/json/validate_tests.json"],
+        "errors": 0,
+        "warnings": 2,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "TEST",
+            "ip_address": "abc.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "TEST",
+            "ip_address": "87.21.157.231adf",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "validate_by_regex",
+        "details": "Filter IP field by against an IPv4 regex",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/validators/validate_by_regex.json",
+        "source_files": ["tests/test_files/json/validate_tests.json"],
+        "errors": 0,
+        "warnings": 2,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "TEST",
+            "ip_address": "abc.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "TEST",
+            "ip_address": "87.21.157.231adf",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "validate_by_length",
+        "details": "Filter first name field for length GT 4 chars",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/validators/validate_by_length.json",
+        "source_files": ["tests/test_files/json/validate_tests.json"],
+        "errors": 0,
+        "warnings": 2,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "TEST",
+            "ip_address": "abc.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "TEST",
+            "ip_address": "87.21.157.231adf",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "validate_by_substring_require",
+        "details": "Filter ID field by defined minimum",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/validators/validate_by_substring_require.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 6,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "validate_by_substring_exclude",
+        "details": "Filter ID field by defined minimum",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/validators/validate_by_substring_exclude.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 4,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "validate_stop_on_invalid",
+        "details": "Filter first name field for length GT 4 chars",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/validators/validate_stop_on_invalid.json",
+        "source_files": ["tests/test_files/json/validate_tests.json"],
+        "errors": 2,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "TEST",
+            "ip_address": "abc.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "TEST",
+            "ip_address": "87.21.157.231adf",
+            "first_name": "Dulcea"
+        }
+    },
+
+    {
+        "name": "modify_do_math",
+        "details": "perform all math operations on ID field",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/modifiers/modify_do_math.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "modify_trim_string",
+        "details": "trims the first name and last name fields",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/modifiers/modify_trim_string.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "last_name": "K",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "ock"
+        },
+        "last": {
+            "last_name": "",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "lcea"
+        }
+    },
+    {
+        "name": "modify_remove_whitespace",
+        "details": "remove whitespace from string fields",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/modifiers/modify_remove_whitespace.json",
+        "source_files": ["tests/test_files/json/modify_tests.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston  ",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "  Brock"
+        },
+        "last": {
+            "last_name": "Kaming  ",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "  Dulcea"
+        }
+    },
+    {
+        "name": "modify_change_case",
+        "details": "perform all math operations on ID field",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/modifiers/modify_change_case.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "last_name": "kingston",
+            "email": "Bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "BROCK"
+        },
+        "last": {
+            "last_name": "kaming",
+            "email": "Dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "DULCEA"
+        }
+    },
+    {
+        "name": "modify_remove_substring",
+        "details": "perform all math operations on ID field",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/modifiers/modify_remove_substring.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0examiner.com",
+            "id": 1,
+            "gender": "M",
+            "ip_address": "156.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9github.io",
+            "id": 10,
+            "gender": "Fem",
+            "ip_address": "87.21.157.231",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "modify_replace_value",
+        "details": "replace values in email and gender fields",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/modifiers/modify_replace_value.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "last_name": "Kingston",
+            "email": "bkingston0@test.examiner.com",
+            "id": 1,
+            "gender": "Mbeer",
+            "ip_address": "156.220.77.198",
+            "first_name": "Brock"
+        },
+        "last": {
+            "last_name": "Kaming",
+            "email": "dkaming9@test.github.io",
+            "id": 10,
+            "gender": "Fembeer",
+            "ip_address": "87.21.157.231",
+            "first_name": "Dulcea"
+        }
+    },
+    {
+        "name": "modify_append_string",
+        "details": "append strings to first and last name fields",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/transform/modifiers/modify_append_string.json",
+        "source_files": ["tests/test_files/json/base_json.json"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "last_name": "KingstonTEST2",
+            "email": "bkingston0@examiner.com",
+            "id": 1,
+            "gender": "Male",
+            "ip_address": "156.220.77.198",
+            "first_name": "TESTBrock"
+        },
+        "last": {
+            "last_name": "KamingTEST2",
+            "email": "dkaming9@github.io",
+            "id": 10,
+            "gender": "Female",
+            "ip_address": "87.21.157.231",
+            "first_name": "TESTDulcea"
+        }
+    }
+]

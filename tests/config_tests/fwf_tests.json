@@ -1,0 +1,184 @@
+[
+    {
+        "name": "JSON_oto_header",
+        "details": "FWF -> JSON: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/fwf/JSON_oto_header.json",
+        "source_files": ["tests/test_files/fwf/base_fwf.txt"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "CSV_oto_header",
+        "details": "FWF -> CSV: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/fwf/CSV_oto_header.json",
+        "source_files": ["tests/test_files/fwf/base_fwf.txt"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "CSV_oto_no_header",
+        "details": "FWF -> CSV: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/fwf/CSV_oto_no_header.json",
+        "source_files": ["tests/test_files/fwf/base_fwf.txt"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "EXCEL_oto_header",
+        "details": "FWF -> CSV: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/fwf/EXCEL_oto_header.json",
+        "source_files": ["tests/test_files/fwf/base_fwf.txt"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "EXCEL_oto_no_header",
+        "details": "FWF -> CSV: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/fwf/EXCEL_oto_no_header.json",
+        "source_files": ["tests/test_files/fwf/base_fwf.txt"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "FWF_oto_header",
+        "details": "FWF -> FWF: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/fwf/FWF_oto_header.json",
+        "source_files": ["tests/test_files/fwf/base_fwf.txt"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "FWF_oto_no_header",
+        "details": "FWF -> CSV: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/fwf/FWF_oto_no_header.json",
+        "source_files": ["tests/test_files/fwf/base_fwf.txt"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    }
+]

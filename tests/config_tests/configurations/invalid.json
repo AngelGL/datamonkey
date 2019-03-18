@@ -1,0 +1,44 @@
+{
+    "outputFile": {
+        "compression": "",
+        "delimiter": ",",
+
+        "sheetName": "Blah",
+        "lineDelimitedJSON": false,
+        "name": "output.xls",
+        "hasHeader": true,
+        "type": "EXCEL"
+    },
+    "outputFields": [
+        {
+            "allowNull": false,
+            "type": "STRING",
+            "name": "gender",
+            "replaceNullWith": "",
+            "sourceFields": [
+                4
+            ],
+            "transformations": [
+                {
+                    "operation": "VALIDATE_BY_LIST",
+                    "parameters": {
+                        "stopOnInvalid": true,
+                        "values": [
+                            "Male",
+                            "Female"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "sourceFields": [
+        {
+            "name": "id",
+            "used": true,
+            "fileIndex": 0
+        }
+    ],
+    "version": "VERSION_1",
+    "label": "TEMPLATE"
+}

@@ -1,0 +1,210 @@
+[
+    {
+        "name": "JSON_oto_no_header",
+        "details": "CSV -> JSON: One To One, No Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/excel/JSON_oto_no_header.json",
+        "source_files": ["tests/test_files/excel/base_excel_no_header.xls"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "JSON_oto_header",
+        "details": "CSV -> JSON: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/excel/JSON_oto_header.json",
+        "source_files": ["tests/test_files/excel/base_excel.xls"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "CSV_oto_header",
+        "details": "CSV -> CSV: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/excel/CSV_oto_header.json",
+        "source_files": ["tests/test_files/excel/base_excel.xls"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "CSV_oto_no_header",
+        "details": "CSV -> CSV: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/excel/CSV_oto_no_header.json",
+        "source_files": ["tests/test_files/excel/base_excel.xls"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "EXCEL_oto_header",
+        "details": "CSV -> CSV: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/excel/EXCEL_oto_header.json",
+        "source_files": ["tests/test_files/excel/base_excel.xls"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "EXCEL_oto_no_header",
+        "details": "CSV -> CSV: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/excel/EXCEL_oto_no_header.json",
+        "source_files": ["tests/test_files/excel/base_excel.xls"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "FWF_oto_header",
+        "details": "Excel -> FWF: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/excel/FWF_oto_header.json",
+        "source_files": ["tests/test_files/excel/base_excel.xls"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    },
+    {
+        "name": "FWF_oto_no_header",
+        "details": "Excel -> FWF: One To One, with Header",
+        "id" : "fc01da57-fake-fake-fake-3e634296ce3f",
+        "configuration_file": "tests/config_tests/configurations/type/excel/FWF_oto_no_header.json",
+        "source_files": ["tests/test_files/excel/base_excel.xls"],
+        "errors": 0,
+        "warnings": 0,
+        "number_items": 10,
+        "first": {
+            "id": 1,
+            "first_name": "Brock",
+            "last_name": "Kingston",
+            "email": "bkingston0@examiner.com",
+            "gender": "Male",
+            "ip_address": "156.220.77.198"
+        },
+        "last": {
+            "id": 10,
+            "first_name": "Dulcea",
+            "last_name": "Kaming",
+            "email": "dkaming9@github.io",
+            "gender": "Female",
+            "ip_address": "87.21.157.231"
+        }
+    }
+]

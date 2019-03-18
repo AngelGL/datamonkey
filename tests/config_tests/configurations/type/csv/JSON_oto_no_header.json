@@ -1,0 +1,100 @@
+{
+    "version": "VERSION_1",
+    "sourceFiles": [
+        {
+            "hasHeader": false,
+            "type": "CSV"
+        }
+    ],
+    "outputFile": {
+        "compression": "",
+        "delimiter": ",",
+
+        "lineDelimitedJSON": false,
+        "name": "test_output.json",
+        "hasHeader": true,
+        "type": "JSON"
+    },
+    "sourceFields": [
+        {
+            "name": "Column 1",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "Column 2",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "Column 3",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "Column 4",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "Column 5",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "Column 6",
+            "fileIndex": 0,
+            "used": true
+        }
+    ],
+    "outputFields": [
+        {
+            "allowNull": true,
+            "name": "id",
+            "replaceNullWith": "TEST",
+            "sourceFields": [0],
+            "transformations": [],
+            "type": "INT"
+        },
+        {
+            "allowNull": true,
+            "name": "first_name",
+            "replaceNullWith": "TEST",
+            "sourceFields": [1],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": true,
+            "name": "last_name",
+            "replaceNullWith": "TEST",
+            "sourceFields": [2],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": true,
+            "name": "email",
+            "replaceNullWith": "TEST",
+            "sourceFields": [3],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": true,
+            "name": "gender",
+            "replaceNullWith": "TEST",
+            "sourceFields": [4],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": true,
+            "name": "ip_address",
+            "replaceNullWith": "TEST",
+            "sourceFields": [5],
+            "transformations": [],
+            "type": "STRING"
+        }
+    ]
+}

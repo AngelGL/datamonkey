@@ -1,0 +1,24 @@
+[
+    {
+        "int_as_int": 1,
+        "int_as_string": "1",
+        "int_as_bool": true,
+        "bool_as_bool": true,
+        "bool_as_string": "True",
+        "bool_as_int": 1,
+        "string_as_int": 1,
+        "string_as_string": "1",
+        "string_as_bool": true
+    },
+    {
+        "int_as_int": 2,
+        "int_as_string": "2",
+        "int_as_bool": false,
+        "bool_as_bool": false,
+        "bool_as_string": "false",
+        "bool_as_int": 0,
+        "string_as_int": 2,
+        "string_as_string": "2",
+        "string_as_bool": false
+    }
+]

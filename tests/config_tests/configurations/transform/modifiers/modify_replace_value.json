@@ -1,0 +1,116 @@
+{
+    "version": "VERSION_1",
+    "sourceFiles": [
+        {
+            "hasHeader": true,
+            "type": "JSON"
+        }
+    ],
+    "outputFile": {
+        "compression": "",
+        "delimiter": ",",
+
+        "lineDelimitedJSON": false,
+        "name": "test_output.json",
+        "hasHeader": true,
+        "type": "JSON"
+    },
+    "sourceFields": [
+        {
+            "name": "id",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "first_name",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "last_name",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "email",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "gender",
+            "fileIndex": 0,
+            "used": true
+        },
+        {
+            "name": "ip_address",
+            "fileIndex": 0,
+            "used": true
+        }
+    ],
+    "outputFields": [
+        {
+            "allowNull": true,
+            "name": "id",
+            "replaceNullWith": "TEST",
+            "sourceFields": [0],
+            "transformations": [],
+            "type": "INT"
+        },
+        {
+            "allowNull": true,
+            "name": "first_name",
+            "replaceNullWith": "TEST",
+            "sourceFields": [1],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": true,
+            "name": "last_name",
+            "replaceNullWith": "TEST",
+            "sourceFields": [2],
+            "transformations": [],
+            "type": "STRING"
+        },
+        {
+            "allowNull": true,
+            "name": "email",
+            "replaceNullWith": "TEST",
+            "sourceFields": [3],
+            "transformations": [
+                {
+                    "operation": "MODIFY_REPLACE_VALUE",
+                    "parameters": {
+                        "old_value": "@",
+                        "new_value": "@test."
+                    }
+                }
+            ],
+            "type": "STRING"
+        },
+        {
+            "allowNull": true,
+            "name": "gender",
+            "replaceNullWith": "TEST",
+            "sourceFields": [4],
+            "transformations": [
+                {
+                    "operation": "MODIFY_REPLACE_VALUE",
+                    "parameters": {
+                        "old_value": "ale",
+                        "new_value": "beer"
+                    }
+                }
+            ],
+            "type": "STRING"
+        },
+        {
+            "allowNull": true,
+            "name": "ip_address",
+            "replaceNullWith": "TEST",
+            "sourceFields": [5],
+            "transformations": [],
+            "type": "STRING"
+        }
+    ]
+}
