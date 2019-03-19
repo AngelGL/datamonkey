@@ -120,7 +120,7 @@ These dependencies are required if working with Excel files:
 
 
 ## License
-[BSD 3](LICENSE)
+[MIT](https://github.com/DataMonkeyHQ/datamonkey/blob/master/LICENSE)
 
 ## Additional Documentation
 The official documentation is hosted here: https://docs.data-monkey.com/. It has several helpful guides, such as how to create a file template, and an appendix with information on the various operations you can perform on your data.
