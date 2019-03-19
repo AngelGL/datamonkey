@@ -1,3 +1,7 @@
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/datamonkey.svg)
+![PyPI - License](https://img.shields.io/pypi/l/datamonkey.svg?color=green)
+![PyPI](https://img.shields.io/pypi/v/datamonkey.svg?color=orange&label=version)
+
 Data Monkey
 ==========
 
@@ -18,17 +22,18 @@ Data Monkey currently supports the following file formats:
 3. Fixed-width text files (AKA flat files)
 4. JSON (with a flat, non-nested data structure)
 
+Check out the feature documentation [documentation](https://docs.data-monkey.com/) for more details.
+
 ## Main Features
 
   - Spend less time writing routine code to ingest or transfrom data loaded from a file or external API. Data Monkey lets you reliably manipulate data into exactly what you need; whether you're converting a CSV file into JSON or generating an Excel report from an API response, Data Monkey has you covered.
-  - A no code, configuration-based approach -- use our web application to quickly update your file templates as often as necessary. It's simple to change the file type that's generated, filter out unnecessary results, combine and transform data, and much more.
+  - A no code, configuration-based approach -- use our [web application](https://app.data-monkey.com) to quickly update your file templates as often as necessary. It's simple to change the file type that's generated, filter out unnecessary results, combine and transform data, and much more.
   - It's frustrating to find unexpected 'surprises' in your data that don't line up with your expectations -- which is why data validation is a core feature of Data Monkey. Configure any number of data validations that will alert you if something isn't quite right. 
   - Data Monkey provides play-by-play progress tracking when transforming large files to let you know exactly where you're at in the process.
 
 ## Where to get it
 
-The source code for the community edition is currently hosted on GitHub at:
-https://github.com/datamonkey-hq/datamonkey
+The source code for the community edition is currently hosted on [GitHub](https://github.com/datamonkey-hq/datamonkey).
 
 Binary installers for the latest released version are available at the [Python
 package index](https://pypi.org/project/datamonkey).
@@ -38,8 +43,7 @@ package index](https://pypi.org/project/datamonkey).
 pip install datamonkey
 ```
 
-This will automatically install the required dependencies listed [below](#dependencies), if you don't already have them available.
-Please see the list of optional dependencies below; you may need them if you're working with Excel files, or writing/reading files to S3.
+This will automatically install the required dependencies listed [below](#dependencies), if you don't already have them available. Additionally, please take a look at the optional dependencies; you may need them if you're working with Excel files, or writing/reading files to S3.
 
 ## Usage & Examples
 
@@ -63,10 +67,9 @@ warnings file that will contain details on any issues.
 
 ## Additional Configuration
 
-
-### Caching Behavior
+### Offline Processing
 By default, Data Monkey will attempt to pull the most recent version of your file template
-on each run using the template key you provide. If you'd prefer to use a local cached
+on each run using the template key you provide. If you'd prefer to use a local
 version of the template (downloadable on the summary screen of your file template),
 you can initialize the `FileProcessor` with the location of the template file:
 
@@ -74,6 +77,8 @@ you can initialize the `FileProcessor` with the location of the template file:
 from datamonkey import FileProcessor
 processor = FileProcessor(YOUR_KEY, template_file_path="PATH/TO/FILE")
 ```
+
+This will allow you to process files completely offline or from within a secure environment with limited network access.
 
 ### File Locations
 You can also override the location/name of:
@@ -118,12 +123,11 @@ These dependencies are required if working with Excel files:
 [BSD 3](LICENSE)
 
 ## Additional Documentation
-The official documentation is hosted here: https://documentation.data-monkey.com/. It has several helpful guides, such as how to create a file template, and an appendix with information on the various operations you can perform on your data.
+The official documentation is hosted here: https://docs.data-monkey.com/. It has several helpful guides, such as how to create a file template, and an appendix with information on the various operations you can perform on your data.
 
 ## Background
 `datamonkey` was born out of the frustration of having to reinvent the wheel every
-time any new file needed to be processed with specific requirements. Work on ``datamonkey`` started in early 2017 and development is ongoing; we'd love your feedback on features you'd like to see or file formats that should be supported -- please let us know at feedback@data-monkey.com!
+time any new file needed to be processed with specific requirements. Work on ``datamonkey`` started in 2018 and development is ongoing. We'd love your feedback on features you'd like to see or file formats that should be supported -- please let us know at feedback@data-monkey.com!
 
 ## Getting Help
-
 For usage questions, inquiries, or general feedback, please feel free to contact us via email at help@data-monkey.com.
