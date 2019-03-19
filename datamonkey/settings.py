@@ -1,5 +1,5 @@
 # PROCESSING
-BASE_API_URL = "https://api.data-monkey.com/v1/"
+BASE_API_URL = "https://api.data-monkey.com/v1/public/"
 CHUNKSIZE = 1000000
 
 # PANDAS/PYTHON/FILE TYPE MAPPINGS
