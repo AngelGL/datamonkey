@@ -643,7 +643,7 @@ class Configuration:
                 if field.col_specs is None:
                     raise ValueError("Field '%s' does not have column markers set." % field.name)
 
-                width = field.col_specs[1] - field.col_specs[0]
+                width = (field.col_specs[1] - field.col_specs[0]) + 1
                 if field.type in [Field.STRING, Field.DATETIME, Field.DATE, Field.BOOLEAN]:
                     format += "%-" + str(width) + '.' + str(width) + 's'
                 elif field.type == Field.INT:
@@ -659,7 +659,7 @@ class Configuration:
                     if field.col_specs is None:
                         raise ValueError("Field '%s' does not have column markers set." % field.name)
 
-                    width = field.col_specs[1] - field.col_specs[0]
+                    width = (field.col_specs[1] - field.col_specs[0]) + 1
                     format += "%-" + str(width) + '.' + str(width) + 's'
 
             self.output_file.fwf_header_format = format
@@ -715,6 +715,3 @@ class Configuration:
         print("Output: 1 %s file" % self.output_file.type)
         print("%d Expected Fields: %s" % (len(self.output_fields), ', '.join(field.name for field in self.output_fields)))
         print("----------------------------------")
-
-
-

@@ -132,7 +132,7 @@ def __test_configuration_files(tests):
                 objects = _test_excel_output(output_file_path, has_header, sheet_name, names)
 
             elif output_type == "FWF":
-                widths = [field.col_specs[1] - field.col_specs[0] for field in processor.output_fields]
+                widths = [(field.col_specs[1] - field.col_specs[0] + 1)  for field in processor.output_fields]
                 objects = _test_fwf_output(output_file_path, has_header, widths, names)
 
             assert len(objects) == number_items
@@ -186,8 +186,3 @@ def __test_output(expected, output):
         except AssertionError as e:
             e.args += (key,)
             raise
-
-
-
-
-

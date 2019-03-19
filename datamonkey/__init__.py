@@ -4,6 +4,6 @@
 
 __author__ = """Data Monkey. LLC"""
 __email__ = 'help@data-monkey.com'
-__version__ = '1.0.2'
+__version__ = '1.0.4'
 
 from .core import FileProcessor
