@@ -159,7 +159,7 @@ class SourceFile(File):
         """
         if source_fields:
             # pandas has some weird issues with the colspecs list based on testing... use field widths instead
-            widths = [field.col_specs[1] - field.col_specs[0] for field in source_fields]
+            widths = [(field.col_specs[1] - field.col_specs[0] + 1) for field in source_fields]
         else:
             widths = None
 
