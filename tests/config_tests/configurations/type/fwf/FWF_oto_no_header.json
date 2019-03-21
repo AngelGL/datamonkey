@@ -20,37 +20,37 @@
             "name": "id",
             "fileIndex": 0,
             "used": true,
-            "colSpecs": [0, 5]
+            "colSpecs": [1, 5]
         },
         {
             "name": "first_name",
             "fileIndex": 0,
             "used": true,
-            "colSpecs": [6, 20]
+            "colSpecs": [6, 19]
         },
         {
             "name": "last_name",
             "fileIndex": 0,
             "used": true,
-            "colSpecs": [21, 40]
+            "colSpecs": [20, 38]
         },
         {
             "name": "email",
             "fileIndex": 0,
             "used": true,
-            "colSpecs": [41, 70]
+            "colSpecs": [39, 67]
         },
         {
             "name": "gender",
             "fileIndex": 0,
             "used": true,
-            "colSpecs": [71, 80]
+            "colSpecs": [68, 76]
         },
         {
             "name": "ip_address",
             "fileIndex": 0,
             "used": true,
-            "colSpecs": [81, 100]
+            "colSpecs": [77, 98]
         }
     ],
     "outputFields": [
